@@ -1,0 +1,1 @@
+XDGame的Init不要在GameInstance调用，UnLua的Initialize位于SetEnable() / OnPostWorldClearup() / PreLoadMap() / OnPostGarbageCollect() / PreBeginPIE()，因此只需要在任意的BeginPlay中调用即可，
